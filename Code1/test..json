@@ -1,0 +1,499 @@
+--test
+{
+
+  "root": {
+    "rows": [
+      "100%"
+    ],
+    "type": "grid",
+    "columns": [
+      "minmax(70%, 1fr)",
+      "minmax(260px, 560px)"
+    ],
+    "components": [
+      {
+        "type": "stack",
+        "gridRow": 1,
+        "components": [
+          {
+            "type": "component",
+            "component": "breadcrumbs",
+            "componentId": "component_5wud7hn"
+          },
+          {
+            "type": "component",
+            "component": "title",
+            "componentId": "component_hnnq84t"
+          },
+          {
+            "type": "stack",
+            "components": [
+              {
+                "id": "tabs",
+                "type": "sections",
+                "location": "tabs",
+                "sections": [
+                  {
+                    "type": "section",
+                    "title": {
+                      "type": "string",
+                      "value": "Description",
+                      "localize": true
+                    },
+                    "component": {
+                      "type": "stack",
+                      "components": [
+                        {
+                          "type": "tags",
+                          "componentId": "tags_FCjGkGn7Fq7HdqKc"
+                        },
+                        {
+                          "type": "description",
+                          "componentId": "description_p6KWzfq8mNMqmcgP"
+                        },
+                        {
+                          "type": "customFieldsLongDefault",
+                          "components": [],
+                          "componentId": "customFieldsLongDefault_WpTHjHrF6fFdct7z"
+                        },
+                        {
+                          "type": "attachments",
+                          "componentId": "attachments_hMjtKNdQqzPDhmh7"
+                        },
+                        {
+                          "type": "comments",
+                          "componentId": "comments_gbwTmHQGdhnkffKm"
+                        }
+                      ],
+                      "componentId": "stack_nTLFnHjWGzCGKztW",
+                      "orientation": "column"
+                    },
+                    "componentId": "section_bhep8pa"
+                  },
+                  {
+                    "type": "section",
+                    "title": {
+                      "type": "string",
+                      "value": "masterProduct",
+                      "isPlural": true,
+                      "localize": true,
+                      "useTerms": true
+                    },
+                    "component": {
+                      "type": "component",
+                      "component": "entity.new.list",
+                      "properties": {
+                        "name": "Master Products",
+                        "title": {
+                          "type": "string",
+                          "value": "masterProduct",
+                          "isPlural": true,
+                          "localize": true,
+                          "useTerms": true
+                        },
+                        "definition": {
+                          "cells": {
+                            "types": [
+                              "masterproduct"
+                            ]
+                          },
+                          "cardSettings": {
+                            "list_masterproduct": {
+                              "list": [
+                                [
+                                  {
+                                    "id": "entity_name_1line"
+                                  },
+                                  {
+                                    "id": "general_entity_id"
+                                  },
+                                  {
+                                    "id": "owner"
+                                  },
+                                  {
+                                    "id": "assigned_users"
+                                  },
+                                  {
+                                    "id": "teams_assignable"
+                                  },
+                                  {
+                                    "id": "state_full_length"
+                                  },
+                                  {
+                                    "id": "project_long"
+                                  },
+                                  {
+                                    "id": "extendable_domain_Features_feature_list_name_count"
+                                  },
+                                  {
+                                    "id": "extendable_domain_UserStories_userstory_list_name_count"
+                                  }
+                                ]
+                              ]
+                            }
+                          },
+                          "entityAxisId": "extendable_domain_one_to_many_area_area"
+                        },
+                        "entityType": "masterProduct",
+                        "propertyName": "masterProducts"
+                      },
+                      "componentId": "component_mcc8bwNdkBbwgKbn",
+                      "extendableDomain": {
+                        "version": 484
+                      }
+                    },
+                    "titleExtra": {
+                      "type": "component",
+                      "component": "label.generalCounter",
+                      "properties": {
+                        "text": "",
+                        "collectionField": "masterProducts"
+                      },
+                      "componentId": "component_xt8l1u6"
+                    },
+                    "componentId": "section_00uw5dr"
+                  },
+                  {
+                    "from": [
+                      "extendableDomainLayoutTransformation"
+                    ],
+                    "type": "section",
+                    "title": {
+                      "type": "string",
+                      "value": "feature",
+                      "isPlural": true,
+                      "localize": true,
+                      "useTerms": true
+                    },
+                    "component": {
+                      "type": "component",
+                      "component": "entity.new.list",
+                      "properties": {
+                        "name": "Features",
+                        "title": {
+                          "type": "string",
+                          "value": "feature",
+                          "isPlural": true,
+                          "localize": true,
+                          "useTerms": true
+                        },
+                        "origin": "extendable_domain_tab_features",
+                        "definition": {
+                          "cells": {
+                            "types": [
+                              "feature"
+                            ]
+                          },
+                          "entityAxisId": "extendable_domain_one_to_many_area_area"
+                        },
+                        "entityType": "feature",
+                        "propertyName": "features"
+                      },
+                      "componentId": "component_qgRjhL6WrDrNfJPM",
+                      "extendableDomain": {
+                        "version": 484
+                      }
+                    },
+                    "titleExtra": {
+                      "type": "component",
+                      "component": "label.generalCounter",
+                      "properties": {
+                        "text": "",
+                        "collectionField": "features",
+                        "entityTypeColor": "feature"
+                      },
+                      "componentId": "component_HR6HdNPwBkDqHKk6"
+                    },
+                    "componentId": "section_d9wj8bPLbRmRNhb9"
+                  },
+                  {
+                    "from": [
+                      "extendableDomainLayoutTransformation"
+                    ],
+                    "type": "section",
+                    "title": {
+                      "type": "string",
+                      "value": "userstory",
+                      "isPlural": true,
+                      "localize": true,
+                      "useTerms": true
+                    },
+                    "component": {
+                      "type": "component",
+                      "component": "entity.new.list",
+                      "properties": {
+                        "name": "User Stories",
+                        "title": {
+                          "type": "string",
+                          "value": "userstory",
+                          "isPlural": true,
+                          "localize": true,
+                          "useTerms": true
+                        },
+                        "origin": "extendable_domain_tab_userStories",
+                        "definition": {
+                          "cells": {
+                            "types": [
+                              "userstory"
+                            ]
+                          },
+                          "entityAxisId": "extendable_domain_one_to_many_area_area"
+                        },
+                        "entityType": "userstory",
+                        "propertyName": "userStories"
+                      },
+                      "componentId": "component_qkPwBmfNP6dz8mtH",
+                      "extendableDomain": {
+                        "version": 484
+                      }
+                    },
+                    "titleExtra": {
+                      "type": "component",
+                      "component": "label.generalCounter",
+                      "properties": {
+                        "text": "",
+                        "collectionField": "userStories",
+                        "entityTypeColor": "userstory"
+                      },
+                      "componentId": "component_FLwMPJLTNmmrjjQD"
+                    },
+                    "componentId": "section_QghWwQpGQcPTj6FM"
+                  },
+                  {
+                    "type": "section",
+                    "title": {
+                      "type": "string",
+                      "value": "Relations",
+                      "localize": true
+                    },
+                    "component": {
+                      "type": "component",
+                      "component": "relations.container",
+                      "properties": {
+                        "name": "relations container"
+                      },
+                      "componentId": "component_RwGLTC76pQczdjJz"
+                    },
+                    "titleExtra": {
+                      "type": "component",
+                      "component": "label.relationCount",
+                      "properties": {
+                        "text": ""
+                      },
+                      "componentId": "component_7kgxctg"
+                    },
+                    "componentId": "section_r0nricj"
+                  },
+                  {
+                    "type": "section",
+                    "title": {
+                      "type": "string",
+                      "value": "History",
+                      "localize": true
+                    },
+                    "component": {
+                      "type": "component",
+                      "component": "auditHistory",
+                      "componentId": "component_C8p9gb99LDwLnJp8"
+                    },
+                    "componentId": "section_a6ede8w"
+                  }
+                ],
+                "componentId": "sections_plyih8u"
+              }
+            ],
+            "componentId": "stack_ri9ac87",
+            "orientation": "column"
+          }
+        ],
+        "gridColumn": 1,
+        "componentId": "stack_yalnyj9",
+        "orientation": "column"
+      },
+      {
+        "type": "loadingCover",
+        "gridRow": 1,
+        "component": {
+          "type": "stack",
+          "location": "panel.right",
+          "components": [
+            {
+              "type": "stack",
+              "components": [
+                {
+                  "type": "actionsMenu",
+                  "componentId": "actionsMenu_2p0hxk6"
+                },
+                {
+                  "type": "quickAdd",
+                  "componentId": "quickAdd_alalote"
+                },
+                {
+                  "type": "shareEntity",
+                  "componentId": "shareEntity_lankw5i"
+                },
+                {
+                  "type": "followButton",
+                  "componentId": "followButton_lnhodyr"
+                }
+              ],
+              "componentId": "stack_yl282ax",
+              "orientation": "row-reverse"
+            },
+            {
+              "type": "property.teamEntityState",
+              "componentId": "property.teamEntityState_uhkw1vg"
+            },
+            {
+              "type": "collapsible",
+              "title": {
+                "type": "string",
+                "value": "Assignments",
+                "localize": true
+              },
+              "component": {
+                "type": "stack",
+                "components": [
+                  {
+                    "type": "portfolioAssignments",
+                    "componentId": "portfolioAssignments_wq2l5s7"
+                  },
+                  {
+                    "type": "separator",
+                    "componentId": "separator_sa6vo2k"
+                  },
+                  {
+                    "type": "component",
+                    "component": "assignmentsList",
+                    "componentId": "component_4hmilyn"
+                  }
+                ],
+                "componentId": "stack_1q8da50",
+                "orientation": "column"
+              },
+              "componentId": "collapsible_hxp9y2t"
+            },
+            {
+              "type": "component",
+              "component": "panel.linkedTestPlan",
+              "componentId": "component_lhpwxbq"
+            },
+            {
+              "type": "collapsible",
+              "title": {
+                "type": "string",
+                "value": "Info",
+                "localize": true
+              },
+              "component": {
+                "type": "stack",
+                "components": [
+                  {
+                    "type": "property.owner.project",
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "value": "Creator",
+                        "localize": true
+                      }
+                    },
+                    "componentId": "property.owner.project_r0rd92q"
+                  },
+                  {
+                    "type": "property.createDate",
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "value": "Creation date",
+                        "localize": true
+                      }
+                    },
+                    "componentId": "property.createDate_dnkmrru"
+                  },
+                  {
+                    "type": "property.startDate.assignable",
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "value": "Start date",
+                        "localize": true
+                      },
+                      "editable": true
+                    },
+                    "componentId": "property.startDate.assignable_vngph31"
+                  },
+                  {
+                    "type": "property.completeDate",
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "value": "Completion date",
+                        "localize": true
+                      },
+                      "editable": true
+                    },
+                    "componentId": "property.completeDate_78fp5w5"
+                  },
+                  {
+                    "type": "property.plannedStartDate",
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "value": "Planned start",
+                        "localize": true
+                      },
+                      "editable": true
+                    },
+                    "componentId": "property.plannedStartDate_4fmitb8"
+                  },
+                  {
+                    "type": "property.plannedEndDate",
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "value": "Planned end",
+                        "localize": true
+                      },
+                      "editable": true
+                    },
+                    "componentId": "property.plannedEndDate_bq6m7d7"
+                  }
+                ],
+                "componentId": "stack_jqamo7s",
+                "orientation": "column"
+              },
+              "componentId": "collapsible_amwofa8"
+            },
+            {
+              "type": "collapsible",
+              "title": {
+                "type": "string",
+                "value": "Custom fields",
+                "localize": true
+              },
+              "component": {
+                "type": "customFieldsShortDefault",
+                "components": [],
+                "componentId": "customFieldsShortDefault_w0lfqfr"
+              },
+              "componentId": "collapsible_fygi8nc"
+            }
+          ],
+          "componentId": "stack_tg842ru",
+          "orientation": "column"
+        },
+        "gridColumn": 2,
+        "properties": {
+          "height": "100vh"
+        },
+        "componentId": "loadingCover_87z62ru"
+      }
+    ],
+    "componentId": "grid_jht6tbs"
+  },
+  "integrations": {},
+  "generationConfig": {
+    "ignoreFields": [],
+    "historyTabWasAdded": true
+  }
+}
